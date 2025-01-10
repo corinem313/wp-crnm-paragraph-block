@@ -1,0 +1,14 @@
+.tooltip {
+  text-decoration: underline dotted;
+  position: relative;
+}
+
+.tooltip[data-tooltip-text]::after {
+  content: attr(data-tooltip-text);
+  font-size: 0.8em;
+  color: #555;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}

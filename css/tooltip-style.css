@@ -1,0 +1,19 @@
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip[data-tooltip-text]:hover::after {
+  content: attr(data-tooltip-text);
+  display: block;
+  position: absolute;
+  background-color: #0000009e;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  white-space: nowrap;
+}
