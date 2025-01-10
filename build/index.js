@@ -154,8 +154,6 @@ const TooltipButton = ({
   const activeFormat = (0,_wordpress_rich_text__WEBPACK_IMPORTED_MODULE_0__.getActiveFormat)(value, 'custom/tooltip');
   const applyTooltip = () => {
     const newAttributes = {
-      'aria-describedby': activeFormat ? activeFormat.attributes['aria-describedby'] // Preserve the same ID
-      : `tooltip-${Date.now()}`,
       'data-tooltip-text': tooltipText
     };
 

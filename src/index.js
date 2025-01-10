@@ -12,9 +12,6 @@ const TooltipButton = ({ isActive, value, onChange }) => {
 
     const applyTooltip = () => {
         const newAttributes = {
-            'aria-describedby': activeFormat
-                ? activeFormat.attributes['aria-describedby'] // Preserve the same ID
-                : `tooltip-${Date.now()}`,
             'data-tooltip-text': tooltipText,
         };
 
